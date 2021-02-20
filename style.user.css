@@ -3,7 +3,7 @@
 @namespace      toonhq
 @author         Nora
 @description    `A dark theme for ToonHQ.`
-@version        1.0.0
+@version        1.0.1
 @license        MIT
 ==/UserStyle== */
 @-moz-document domain("toonhq.org") {
@@ -15,7 +15,9 @@
     .theme.theme--invasions .theme__accent-bg,
     .theme.theme--groups .theme__accent-bg,
     .theme.theme--fishing .theme__accent-bg,
-    .theme.theme--guilds .theme__accent-bg {
+    .theme.theme--guilds .theme__accent-bg,
+    .theme.theme--generic-solid .theme__accent-bg,
+    .theme.theme--generic .theme__accent-bg {
         background: #202020;
         background-image: url(https://toonhq.org/static/dist/img/general_pattern.901019be.svg);
         background-repeat: repeat;
@@ -41,28 +43,26 @@
     }
 
     .welcome[data-v-c0888612],
-    .tt-card__body,
     .tt-card,
-    .card.card--alert {
-        background: #6610f2;
+    .info-card--invasions,
+    .info-card--groups,
+    .card.card--alert,
+    .progress-bar__inner {
+        background: #202020;
+        border-color: #380338;
         color: #FFFFFF;
         border-radius: 32px;
     }
 
+    .info-card--invasions,
+    .info-card--groups {
+        padding: 5px;
+        border: 4px solid white;
+    }
+    
     .vuedal.modal-content {
         background: #202020;
         border-radius: 32px;
-    }
-
-    .info-card--invasions,
-    .welcome[data-v-c0888612],
-    .tt-card__body,
-    .tt-card,
-    .card.card--alert,
-    .progress-bar__inner,
-    .btn.btn-generic-solid {
-        background: #202020;
-        border-color: #380338;
     }
 
     .info-card__title {
@@ -150,12 +150,23 @@
     .btn.btn-invasions,
     .btn.btn-groups,
     .btn.btn-guilds,
-    .btn.btn-fishing {
+    .btn.btn-fishing,
+    .btn.btn-generic-solid {
         color: #fff;
         background: #651565;
         border: 2px solid #fff;
     }
-
+    
+        
+    .btn.btn-generic-solid:hover,
+    .btn.btn-fishing:hover,
+    .btn.btn-groups:hover, 
+    .btn.btn-guilds:hover,
+    .btn.btn-invasions:hover,
+    .btn.btn-darkblue:hover {
+        background: #ef4fef
+    }
+    
     .speedchat__footer[data-v-9604629a] {
         color: #fff;
         background: #202020;
@@ -166,8 +177,7 @@
     .info-card__content {
         color: #fff;
         background: #202020;
-        margin: 0px;
-        border: 0;
+        display: center;
         font-size: 14px
     }
 
@@ -178,19 +188,15 @@
         border-bottom-right-radius: 24px;
     }
 
-    .subnav.subnav--blue .subnav__items > li a {
+    .subnav.subnav--blue .subnav__items > li a,
+    .subnav.subnav--fishing .subnav__items > li a {
         color: #111;
     }
 
-    .subnav__items li a,
-    .subnav.subnav--fishing .subnav__items > li a {
-        color: #FFFFFF;
-    }
-
     .info-card--invasions .info-card__title,
-    .info-card--groups .info-card__title {
+    .info-card--groups .info-card__title,
+    .guild__district[data-v-71babf33] {
         color: lime;
-        margin-bottom: -2px;
     }
 
     .card[data-v-a5d191de],
@@ -216,9 +222,30 @@
         color: #380338;
         border: 4px solid #651565;
     }
+    
+    .btn:not(:disabled):not(.disabled) {
+        border-radius: 24px;
+    }
+    .gdetails .invasion-info__body {
+        color: #000;
+    }
+    
+    .gdetails .invasion-info {
+        border: 5px solid #202020;
+    }
+    
+    .subnav.subnav--steel .subnav__items>li a {
+        color: #202020;
+    }
 
     .btn.btn-groups:hover,
     .btn.btn-darkblue:hover {
         background: red;
+    }
+    
+    .alert-primary {
+        background: #202020;
+        color: #fff;
+        border: 2px solid white;
     }
 }
