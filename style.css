@@ -1,0 +1,224 @@
+/* ==UserStyle==
+@name           ToonHQ Dark Theme
+@namespace      toonhq
+@author         Nora
+@description    `A dark theme for ToonHQ.`
+@version        1.0.0
+@license        MIT
+==/UserStyle== */
+@-moz-document domain("toonhq.org") {
+    .theme.theme--generic-solid,
+    nav.navbar.navbar-default,
+    .theme.theme--home,
+    .navbar-expand-lg,
+    .theme__accent-bg,
+    .theme.theme--invasions .theme__accent-bg,
+    .theme.theme--groups .theme__accent-bg,
+    .theme.theme--fishing .theme__accent-bg,
+    .theme.theme--guilds .theme__accent-bg {
+        background: #202020;
+        background-image: url(https://toonhq.org/static/dist/img/general_pattern.901019be.svg);
+        background-repeat: repeat;
+        background-size: 789.36px 761.26px;
+    }
+
+    .sl__content[data-v-1d6821ca] {
+        background: #483c5c;
+        background-image: url(https://toonhq.org/static/dist/img/general_pattern.901019be.svg);
+        background-repeat: repeat;
+        background-size: 789.36px 761.26px;
+    }
+
+    .subnav.subnav {
+        background: #ffffff00;
+        color: #ffffff00;
+    }
+
+    .subnav__items li a,
+    .subnav.subnav--fishing .subnav__items > li a {
+        color: #fff;
+        font-size: 16px;
+    }
+
+    .welcome[data-v-c0888612],
+    .tt-card__body,
+    .tt-card,
+    .card.card--alert {
+        background: #6610f2;
+        color: #FFFFFF;
+        border-radius: 32px;
+    }
+
+    .vuedal.modal-content {
+        background: #202020;
+        border-radius: 32px;
+    }
+
+    .info-card--invasions,
+    .welcome[data-v-c0888612],
+    .tt-card__body,
+    .tt-card,
+    .card.card--alert,
+    .progress-bar__inner,
+    .btn.btn-generic-solid {
+        background: #202020;
+        border-color: #380338;
+    }
+
+    .info-card__title {
+        color: #651565;
+    }
+
+    .info-card__title,
+    .group-message-count {
+        color: #651565;
+        border-radius: 50px;
+    }
+
+    .gdetails {
+        background: #202020;
+        color: #b7aeae;
+        border: 8px solid #202020;
+        border-radius: 24px;
+    }
+
+    .features-curve[data-v-c0888612] {
+        background: #ffffff00;
+    }
+
+    .table {
+        color: #000;
+        font-weight: 600;
+        padding: 0.5rem;
+    }
+
+    .message__bubble[data-v-65ad3cfc] {
+        color: #000;
+        background: #ffffff;
+        font-weight: 600;
+    }
+
+    .message__name,
+    .message__time,
+    h4.text-center.mb-0[data-v-b783264e],
+    .h6,
+    h6,
+    .invasion-wanted[data-v-9534b75e],
+    .invasion-info[data-v-9534b75e],
+    .modal-body {
+        color: #fff;
+    }
+
+    .report-link {
+        color: #6610f2;
+    }
+
+    .card.card--alert {
+        background: #202020;
+        margin: 5px;
+        border-radius: 8px;
+        font-size: 24px;
+        padding: 2px;
+    }
+
+    .speedchat__header[data-v-9604629a] {
+        background: #20202000;
+    }
+
+    .speedchat__header-title[data-v-9604629a] {
+        color: #fff;
+    }
+
+    .speedchat__messages[data-v-9604629a] {
+        color: #202020;
+        background: #202020;
+    }
+
+    .speedchat__chat-disabled-reason[data-v-9604629a] {
+        color: #fff;
+        background: #202020;
+    }
+
+    .table-info,
+    .table-info > td,
+    .table-info > th {
+        background: #65156525
+    }
+
+    .btn.btn-darkblue,
+    .subnav.subnav--green .subnav__btn,
+    .btn.btn-invasions,
+    .btn.btn-groups,
+    .btn.btn-guilds,
+    .btn.btn-fishing {
+        color: #fff;
+        background: #651565;
+        border: 2px solid #fff;
+    }
+
+    .speedchat__footer[data-v-9604629a] {
+        color: #fff;
+        background: #202020;
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+
+    .info-card__content {
+        color: #fff;
+        background: #202020;
+        margin: 0px;
+        border: 0;
+        font-size: 14px
+    }
+
+    .modal-footer {
+        background: #202020;
+        border: 2px solid #202020;
+        border-bottom-left-radius: 24px;
+        border-bottom-right-radius: 24px;
+    }
+
+    .subnav.subnav--blue .subnav__items > li a {
+        color: #111;
+    }
+
+    .subnav__items li a,
+    .subnav.subnav--fishing .subnav__items > li a {
+        color: #FFFFFF;
+    }
+
+    .info-card--invasions .info-card__title,
+    .info-card--groups .info-card__title {
+        color: lime;
+        margin-bottom: -2px;
+    }
+
+    .card[data-v-a5d191de],
+    .table thead th,
+    .table td,
+    .table th {
+        background: #202020;
+        border-radius: 24px;
+        color: #fff;
+    }
+
+    .modal-image-close[data-v-b783264e] {
+        position: absolute;
+        top: 1px;
+        left: 1px;
+        width: 0px;
+        height: 0px;
+        color: #00000000;
+        background: #00000000;
+    }
+
+    .multiselect__tags {
+        color: #380338;
+        border: 4px solid #651565;
+    }
+
+    .btn.btn-groups:hover,
+    .btn.btn-darkblue:hover {
+        background: red;
+    }
+}
