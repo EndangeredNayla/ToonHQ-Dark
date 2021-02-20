@@ -1,6 +1,7 @@
 # ToonHQ Dark
-A Dark Theme for the [ToonHQ](https://toonhq.org) Website
+A Dark Theme for [ToonHQ](https://toonhq.org)
 
+![Imgur](https://i.imgur.com/4iIkyK1.png)
 ## Installation
 
 A userstyle extension is required, common ones include:
