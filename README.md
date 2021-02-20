@@ -10,4 +10,4 @@ A userstyle extension is required, common ones include:
 
 Then:
 
-📦 [Install the usercss](https://github.com/NoraTT/ToonHQ-Dark/raw/master/style.css) with Stylus or xStyle.
+📦 [Install the usercss](https://github.com/NoraTT/ToonHQ-Dark/raw/master/style.user.css) with Stylus or xStyle.
