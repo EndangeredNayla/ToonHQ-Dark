@@ -3,7 +3,7 @@
 @namespace      toonhq
 @author         Nora
 @description    `A dark theme for ToonHQ.`
-@version        1.0.2
+@version        1.1.0
 @license        MIT
 ==/UserStyle== */
 @-moz-document domain("toonhq.org") {
@@ -17,11 +17,14 @@
     .theme.theme--fishing .theme__accent-bg,
     .theme.theme--guilds .theme__accent-bg,
     .theme.theme--generic-solid .theme__accent-bg,
-    .theme.theme--generic .theme__accent-bg {
+    .theme.theme--generic .theme__accent-bg,
+    .navbar {
         background: #202020;
         background-image: url(https://toonhq.org/static/dist/img/general_pattern.901019be.svg);
         background-repeat: repeat;
         background-size: 789.36px 761.26px;
+        margin-bottom: 7px;
+
     }
 
     .sl__content[data-v-1d6821ca] {
@@ -35,13 +38,17 @@
         background: #ffffff00;
         color: #ffffff00;
     }
+    
+    .navbar-nav {
+        margin-bottom: 7px;
+    }
 
     .subnav__items li a,
     .subnav.subnav--fishing .subnav__items > li a {
         color: #fff;
         font-size: 16px;
     }
-
+    
     .welcome[data-v-c0888612],
     .tt-card,
     .info-card--invasions,
@@ -53,27 +60,52 @@
         color: #FFFFFF;
         border-radius: 32px;
     }
-
+    
+    
+    .dropdown-menu,
+    .dropdown-item,
+    .header-toon__name h5 {
+        background: #202020;
+        color: #FFFFFF;
+        border-radius: 32px;
+    }
+    
+    .info-card--groups .invading-cog {
+    background: transparent;
+    border: 1px solid transparent;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    opacity: 0.5;
+    margin-left: 250px;
+    }
+    
     .info-card--invasions,
     .info-card--groups {
         padding: 5px;
         border: 3px solid #fff;
     }
 
-    .vuedal.modal-content {
+    .vuedal.modal-content,
+    .vue-dropdown__content {
         background: #202020;
         border-radius: 32px;
+        border: #ffffff;
     }
 
-    .group-message-count {
-        color: lime;
-        border-radius: 50px;
+    .group-message-count,
+    .growing-textarea speedchat__chat-entry p-2,
+    .dropdown-menu, .dropdown-item:hover, .header-toon__name h5 {
+        color: #ffffff;
     }
 
     .gdetails {
         background: #202020;
         color: #b7aeae;
-        border: 8px solid #202020;
+        border-radius: 24px;
+    }
+    
+    .invasion-info-container {
         border-radius: 24px;
     }
 
@@ -108,7 +140,7 @@
     .card.card--alert {
         background: #202020;
         margin: 5px;
-        border-radius: 8px;
+        border-radius: 4px;
         font-size: 24px;
         padding: 2px;
     }
@@ -124,11 +156,19 @@
     .speedchat__messages[data-v-9604629a] {
         color: #202020;
         background: #202020;
+        padding: 10px 10px;
+        border-radius: 24px;
+
     }
 
+    .info-card__image {
+        border-radius: 32px;
+        margin-bottom: 10px;
+        height: 85px;
+    }
+    
     .speedchat__chat-disabled-reason[data-v-9604629a] {
         color: #fff;
-        background: #202020;
     }
 
     .table-info,
@@ -147,17 +187,38 @@
     .btn.btn-fishing,
     .btn.btn-generic-solid,
     .btn.btn-green,
-    .btn-option {
-        color: #fff;
+    .btn-block,
+    .btn-groups,
+    .btn-option,
+    .btn.btn-darkblue:hover,
+    .dropdown--text button.dropdown-toggle {
+        color: #fff !important;
         background: #651565;
         border: 2px solid #fff;
+        border-radius: 24px;
+    }
+    
+    .toonatar__center,
+    .toon__track {
+        color: #fff;
+        border: 2px solid #fff;
+        border-radius: 24px;
+    }
+    
+    .speedchat__chat-entry[data-v-9604629a] {
+        color: #fff;
+
     }
 
     .btn.btn-green.btn-option.active,
     .multiselect__option--selected.multiselect__option--highlight,
     .btn.btn-darkblue:hover,
+    .btn.btn-groups:hover,
+    .btn.subnav__btn.ml-3:hover,
+    .subnav__btn:hover,
+    .btn.btn-invasions:hover,
     .multiselect__option--highlight {
-        background: #ef4fef!important
+        background: #ef4fef
     }
 
     .speedchat__footer[data-v-9604629a] {
@@ -189,7 +250,7 @@
     .info-card--groups .info-card__title,
     .report-link,
     .guild__district[data-v-71babf33] {
-        color: lime;
+        color: #ffffff;
     }
 
     .info-card--groups .info-card__title {
@@ -218,8 +279,6 @@
     .btn-group > .btn-group:not(:last-child) > .btn,
     .btn.btn-green.btn-option,
     .btn-group > .btn:not(:last-child):not(.dropdown-toggle) {
-        border-top-right-radius: 8px;
-        border-bottom-right-radius: 8px;
         border-radius: 8px;
         margin: 4px;
     }
@@ -227,14 +286,18 @@
         color: #380338;
         border: 4px solid #651565;
     }
-
-    .btn:not(:disabled):not(.disabled) {
-        border-radius: 24px;
-    }
+    
     .gdetails .invasion-info__body {
         color: #000;
     }
-
+    
+    .gdetails {
+        color: #000;
+        border-radius: 24px;
+        border-color: white;
+        border-width: 4px;
+    }
+    
     .gdetails .invasion-info {
         border: 5px solid #202020;
     }
@@ -243,17 +306,15 @@
         color: #202020;
     }
 
-    .btn.btn-groups:hover,
-    .btn.btn-darkblue:hover,
     .btn.subnav__btn:hover,
     .btn.btn-generic-solid:hover,
     .btn.btn-fishing:hover,
-    .btn.btn-groups:hover,
     .btn.btn-guilds:hover,
-    .btn.btn-invasions:hover,
-    .btn.subnav__btn.ml-3:hover,
-    .btn.btn-green:hover {
+    .btn.btn-green:hover,
+    .btn.btn-block.btn-groups.disabled {
         background: red;
+        border: 4px solid white;
+
     }
 
     .alert-primary {
@@ -263,7 +324,8 @@
     }
 
     .multiselect__input,
-    .multiselect__single {
+    .multiselect__single,
+    .__BVID__1806 {
         background: #202020;
         color: #fff;
     }
@@ -275,5 +337,11 @@
     .vue-swatches__container:not(.vue-swatches--inline) {
         background-color: #202020;
         border-color: #fff;
+    }
+    
+    .dropdown-item:hover .header-toon__name h5,
+    .dropdown-item:hover {
+        background-color: #fff;
+        color: #202020;
     }
 }
